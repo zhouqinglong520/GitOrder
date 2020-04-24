@@ -50,6 +50,33 @@
          $ git rm [file1] [file2] ...
       2.停止追踪指定文件，但该文件会保留在工作区
          $ git rm --cached [file]
-    
-
-      
+## 四、代码提交到本地仓库
+    1.提交暂存区到仓库区
+       $ git commit -m [message]
+    2.提交暂存区的指定文件到仓库区
+       $ git commit [file1] [file2] ... -m [message]
+    3.提交工作区自上次commit之后的变化，直接到仓库区
+       $ git commit -a
+    4.提交时显示所有diff信息
+       $ git commit -v
+    5.使用新的commit，代替上一次提交，如果代码没有任何新变化，就用来修改上一次commit的提交信息
+       $ git commit --amend -m [message]
+    6.重新提交commit，包括指定文件的新变化
+       $ git commit --amend [file1] [file2] ...
+## 五、 代码和远程仓库互动    
+    1.下载远程仓库的所有变动
+       $ git fetch [remote]
+    2.取回远程仓库的变化，并与本地分支合并
+       $ git pull [remote] [branch] 
+    3.显示所有远程仓库
+       $ git remote -v
+    4.显示某个远程仓库的信息
+       $ git remote show [remote]
+    5.增加一个新的远程仓库，并命名
+       $ git remote add [shortname] [url]
+    6.上传本地指定分支到远程仓库
+       $ git push [remote] [branch]
+    7.强行推送当前分支到远程仓库，即使有冲突
+       $ git push [remote] --force
+    8.推送所有分支到远程仓库
+       $ git push[remote] --all
