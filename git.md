@@ -1,7 +1,7 @@
 # Git是目前世界上最先进的分布式版本控制系统。
     git 常用命令的收集以及总结 
 ## 工作原理/流程
-   ![image](https://github.com/zhouqinglong520/GitOrder/image/1.jpg)
+   ![image] (https://github.com/zhouqinglong520/GitOrder/image/1.jpg)
 ## 名词
     1.master: 默认开发分支  
     2.origin: 默认远程版本库  
